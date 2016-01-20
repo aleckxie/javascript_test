@@ -98,3 +98,5 @@ console.info("test");
 console.info("the third time test");
 
 console.info("test111");
+
+console.info("test remote git");
