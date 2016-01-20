@@ -92,3 +92,5 @@ student1.sayYourName();
 
 console.info(student1 instanceof person);
 console.info(student1 instanceof student);
+
+console.info("test");
