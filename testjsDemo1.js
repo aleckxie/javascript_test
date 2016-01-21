@@ -95,8 +95,38 @@ console.info(student1 instanceof student);
 
 console.info("test");
 
-console.info("the third time test");
+console.info(0.1+0.2);
+//十进制
+console.info(parseInt("123",10));
+//八进制
+console.info(parseInt("0123",8));
+//十六进制
+console.info(parseInt("0x123",16));
+//二进制
+console.info(parseInt("11",2));
+console.info(+ "11");
++ "0x10";
+console.info(parseInt("你好",10));
 
-console.info("test111");
+console.info(NaN+5);
 
-console.info("test remote git");
+console.info(isNaN(NaN));
+
+console.info(isFinite(1/0));
+
+console.info("hello".length);
+
+console.info("hello".charAt(0));
+
+console.info("hello,good bye".replace("hello","hi"));
+
+console.info("hello".toUpperCase());
+
+function add(){
+	var sum=0;
+	for(var i=0;i<arguments.length;i++){
+		sum += arguments[i];
+	}
+	return sum;
+}
+console.info(add(1,2,3,4));
