@@ -79,7 +79,25 @@ console.info(a1);
 console.info(b1);
 
 
-test dev;
-
-testjs;
-
+function makePerson(first, last) {
+    return {
+        first: first,
+        last: last,
+        fullName:function(){
+        	 return this.first + ' ' + this.last;
+        },
+        fullNameReversed:function(){
+           return this.last + '' + this.first;
+        }
+    };
+}
+/*function personFullName(person) {
+    return person.first + ' ' + person.last;
+}
+function personFullNameReversed(person) {
+    return person.last + ', ' + person.first
+}*/
+s = makePerson("Simon", "Willison");
+console.info(s.fullName());
+/*personFullName(s); // Simon Willison
+personFullNameReversed(s); // Willison, Simon*/
